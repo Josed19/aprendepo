@@ -1,0 +1,81 @@
+.principal{
+    background-color: $bkMain;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: -50px;
+}
+.encabezado{
+    @extend %titulo;
+    text-align: center;
+    font-size: 1.5em;
+    display: block;
+    margin-top: initial;
+    margin-bottom: 50px;
+    font-weight: initial;
+}
+.enfasis{  /* para forzar la herencia dentro del TAG em */
+    font-style: inherit;
+}
+.importancia{ /* para forzar la herencia dentro del TAG strong */
+    font-weight: inherit;
+}
+.contenedor-flex{
+    @extend %wrapper;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedoritem{
+    max-width: 340px;
+    margin: 0 2em 50px 2em;
+}
+.contenedoritem:last-child{
+    margin-bottom: 0px;     /* esto le quita el margen inferior al ultimo elemento */
+}
+.itemPlataforma{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding:1.5em;
+}
+.titulo-plataforma{
+    @extend %titulo;
+    font-size: 1.5em;
+    padding-bottom:0.2em;
+    font-weight: initial;  /* quitando el font-weight que recibe del normalize.scss */
+    margin: initial;
+}
+.imagen-plataforma{
+    width:100%;
+}
+.descripcion{
+    @extend %parrafo;
+    font-size: 1em;
+    padding: 0;
+    margin: initial;
+    padding: 0.625em 0;
+}
+.cursos{
+    @extend %parrafo;
+    font-size:1em;
+    padding: 0;
+    margin: initial;
+    padding: 0.625em 0 0 0;
+    text-align: center;
+}
+.cursos-titulo{
+    display: inline-block;
+    padding-bottom: 0.5em;  /* estilos al span que esta dentro de cursos */
+}
+.fan-page{
+    margin-top: 7px;
+    background: #EDEC09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[class*="icon-"]{   /* selecciona a todos los elementos html que contengan el atributo class="icon" */
+    font-size: 30px;
+    text-decoration: none;          /* Estos estilos son para los enlaces de la fan-page */
+    padding: 10px 0 0 0;
+    color: $cIconos;
+}

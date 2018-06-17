@@ -1,0 +1,31 @@
+/* estilos para un contenedor de max-width: 1280px;  */
+%wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+%titulo{
+    font-family: 'Sunflower';
+    color: $cFuente;
+}
+%parrafo{
+    font-family: 'Open Sans';
+    color: $cFuente;
+}
+.cabecera{
+    background-color: $bkHeaderFooter;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-principal{
+    @extend %titulo;
+    color: #fff;
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: initial;  /* para no recibir la herencia del archivo Normalize.scss */
+}  
+.logo{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,44 @@
+.pie{
+    background-color: $bkHeaderFooter;
+    padding: 2.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.itempie{
+    width:40%;
+    max-width: 300px; /* max width: le gana al width: 40%; una line arriba */
+    margin:1em;
+    box-sizing: border-box;
+}
+.titulo-pie{
+    @extend %titulo;
+    color: #fff;
+    padding: 0em 0;
+}
+.parrafo-pie{
+    @extend %parrafo;
+    color: #fff;
+    font-size: 0.75em;
+    padding-left: 0.625em;
+    border-left: 1px solid #fff;
+}
+.fan-page-pie{
+    background: initial; /* quitando el fondo amarillo que tiene en el archivo _principal.scss */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-pie{       /* tuve que usar un selector desendiente lo cual se considera mala practica 
+    pero si ves este codigo y puedes hacerlos sin un selector desendiente y con po
+*/
+
+/*
+    le quite el selector desendiente, aplicando una clase a cada icono pero
+    ambos iconos mantienen la clase anterior para los "ICONOS" (Fonstastic)
+*/
+@extend %parrafo;
+color: white;
+font-size:0.85em;
+text-decoration: none;
+}

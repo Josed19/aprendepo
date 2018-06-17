@@ -1,0 +1,20 @@
+.banner{
+    @extend %wrapper;
+    height: 350px;
+    background-image: url('../images/banner.png');
+    background-size: 1280px 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+    display: fleX;
+    align-items: center;
+    justify-content: center;
+}
+.frase{
+    @extend %titulo;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: -2px 2px gray;
+}
